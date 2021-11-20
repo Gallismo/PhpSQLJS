@@ -13,3 +13,18 @@ $connect->query(
             PRIMARY KEY(ID), 
             UNIQUE KEY(PRODUCT_ID)
 )");
+function selectRecordsFrom($table, $count) {
+    global $connect;
+    $result = array();
+    $queryResult = $connect->query("SELECT * FROM $table LIMIT $count");
+    for($i=$queryResult->num_rows; $i>0; $i--) {
+        $result[] = $queryResult->fetch_assoc();
+    }
+    return $result;
+}
+
+$records = selectRecordsFrom('Products', 1);
+foreach ($records as $record) {
+    print_r($record);
+    echo "<br>";
+}
