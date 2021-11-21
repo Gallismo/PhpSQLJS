@@ -27,7 +27,7 @@ SET time_zone = "+00:00";
 -- Структура таблицы `products`
 --
 
-CREATE TABLE `products` (
+CREATE TABLE IF NOT EXISTS `products`  (
   `ID` int(11) NOT NULL,
   `PRODUCT_ID` int(11) NOT NULL,
   `PRODUCT_NAME` varchar(255) COLLATE utf8mb4_unicode_ci NOT NULL,
