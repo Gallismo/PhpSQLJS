@@ -45,6 +45,7 @@ body {
 .table {
     width: 100%;
     border-collapse: collapse;
+    padding-right: 10px;
 }
 
 .table-body {
