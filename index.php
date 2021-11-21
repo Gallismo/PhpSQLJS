@@ -79,6 +79,7 @@ foreach ($records as $record) {
                             <td class=\"table-column\">".$record['PRODUCT_PRICE']."</td>
                             <td class=\"table-column\">".$record['PRODUCT_QUANTITY']."</td>
                             <td class=\"table-column\">".$record['DATE_CREATE']."</td>
+                            <td class='invisible-button-ceil'><button type='button' class='invisible-button'>Скрыть</button></td>
                         </tr>
                         ";
                     }

@@ -58,3 +58,7 @@ body {
     padding: 5px;
     width: 20%;
 }
+
+.invisible-button {
+    margin-left: 10px;
+}
