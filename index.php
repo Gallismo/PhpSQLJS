@@ -50,7 +50,11 @@
                             <td class=\"table-column\">".$record['PRODUCT_ARTICLE']."</td>
                             <td class=\"table-column\">".$record['PRODUCT_NAME']."</td>
                             <td class=\"table-column\">".$record['PRODUCT_PRICE']."</td>
-                            <td class=\"table-column\">".$record['PRODUCT_QUANTITY']."</td>
+                            <td class=\"table-column\">
+                                <span>".$record['PRODUCT_QUANTITY']."</span>
+                                <button type='button' id='increment'>+</button>
+                                <button type='button' id='decrement'>-</button>
+                            </td>
                             <td class=\"table-column\">".$record['DATE_CREATE']."</td>
                             <td class='invisible-button-ceil'><button type='button' class='invisible-button' id='tr-".$record['ID']."-button'>Скрыть</button></td>
                         </tr>
