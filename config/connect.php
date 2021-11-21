@@ -1,4 +1,4 @@
-<?php
+gi<?php
 require_once 'db_config.php';
 
 $connect = new mysqli($db['db_host'], $db['user'], $db['password']);

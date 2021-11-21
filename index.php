@@ -17,11 +17,11 @@
         <div class="products">
             <div class="header">
                 <h2 class="header-text">Products list</h2>
-                <div class="products-count">
+                <div class="products-count" id="productsCount">
                     <?php
                     $count = 10;
                     echo "
-                        <h3 class=\"products-count-value\">Products count: $count</h3>
+                        <h3 class=\"products-count-value\">Products count: <span>$count</span></h3>
                         <button type='button' class='increment count-button'>+</button>
                         <button type='button' class='decrement count-button'>-</button>
                     ";

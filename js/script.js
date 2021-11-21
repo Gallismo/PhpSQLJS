@@ -37,3 +37,4 @@ tableContainer.onclick = function (event) {
         });
     }
 }
+
