@@ -1,6 +1,6 @@
 <?php
     require_once 'CProduct.php';
-    $Cproduct = new CProduct();
+    $CProduct = new CProduct();
 ?>
 <!doctype html>
 <html lang="en">
@@ -40,7 +40,7 @@
                         <td class="invisible-button-ceil"></td>
                     </tr>
                     <?php
-                    $records = $Cproduct->selectRecordsFrom('Products', $count, 'DATE_CREATE', 'DESC');
+                    $records = $CProduct->selectRecordsFrom('Products', $count, 'DATE_CREATE', 'DESC');
                     foreach ($records as $key => $record) {
                         if (!$record['VISIBILITY']) {
                             continue;
