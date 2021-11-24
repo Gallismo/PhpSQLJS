@@ -48,8 +48,8 @@
                                 <div class='quantity-ceil'>
                                 <span>".$record['PRODUCT_QUANTITY']."</span>
                                 <div style=\"width: 30%\">
-                                <button type='button' id='increment'>+</button>
-                                <button type='button' id='decrement'>-</button>
+                                <button type='button' class='increment'>+</button>
+                                <button type='button' class='decrement'>-</button>
                                 </div>
                                 </div>
                             </td>

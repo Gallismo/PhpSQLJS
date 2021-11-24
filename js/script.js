@@ -1,5 +1,5 @@
 tableContainer.onclick = function (event) {
-    if (event.target.tagName=="BUTTON" && (event.target.id!=="increment" && event.target.id!=="decrement")) {
+    if (event.target.tagName=="BUTTON" && (event.target.className!=="increment" && event.target.className!=="decrement")) {
         let id = event.target.closest('tr').id.split('-');
         id.shift();
         let target = {
@@ -15,17 +15,17 @@ tableContainer.onclick = function (event) {
         event.target.closest('tr').remove();
 
     }
-    if (event.target.id=="increment" || event.target.id=="decrement") {
-        if (event.target.id=="increment") {
+    if (event.target.className=="increment" || event.target.className=="decrement") {
+        if (event.target.className=="increment") {
             event.target.closest('td').firstElementChild.firstElementChild.innerHTML++;
         }
-        if (event.target.id=="decrement") {
+        if (event.target.className=="decrement") {
             event.target.closest('td').firstElementChild.firstElementChild.innerHTML--;
         }
         let id = event.target.closest('tr').id.split('-');
         id.shift();
         let target = {
-            'type': event.target.id,
+            'type': event.target.className,
             'id': id.join('')
         }
         fetch('http://testtask:8080/counts.php', {
